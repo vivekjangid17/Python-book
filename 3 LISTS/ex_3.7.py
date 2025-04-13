@@ -28,4 +28,15 @@ print(f"Hii {guest[2]} mam, you are my favourite actress.")
 print(f"Hii {guest[3]} mam, you are my favourite female cricketer.")
 print(f"Hii {guest[4]} sir, shero-sayri bhi hogi.")
 print(f"Hii {guest[5]} sir, hey bhagwaan kya julm hai.")
-print("We have onl")
+print("Sorry Dear Sir and mam, our new dinner table won’t arrive in time for the dinner. Sorry from HEART.")
+
+print('\n',guest)
+guest.pop()
+guest.pop()
+guest.pop()
+guest.pop()
+print('\n',guest)
+
+del guest[1]
+del guest[0]
+print('\n',guest)
