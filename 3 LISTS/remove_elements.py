@@ -14,6 +14,9 @@ poped_ele = score.pop()
 print(score)
 print(poped_ele)
 
+# a=score.pop(2)
+# print(a)
+
 # Removing an Item by Value
 
 age = [45,19,19,20,49,90,78]
