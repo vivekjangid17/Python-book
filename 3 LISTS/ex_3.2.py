@@ -1,4 +1,4 @@
-friends = ['Ravindra', 'Nisha', 'Mohit', 'Vinay' ,'Tara']
+friends = ['Ravindra', 'Ram', 'Montu', 'Golu' ,'Tara']
 
 print(f'Hello bhai {friends[0]}')
 print(f'Hello bhai {friends[1]}')
