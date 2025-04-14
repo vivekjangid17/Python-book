@@ -1,6 +1,6 @@
 # Appending Elements to the End of a List
 
-friends = ['Ravindra', 'Nisha', 'Vinay']
+friends = ['Ravindra', 'Radha', 'Vivek']
 print(friends)
 friends.append('Tara')
 print(friends)
