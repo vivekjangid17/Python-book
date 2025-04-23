@@ -18,7 +18,7 @@ print(my_foods)
 print("\nMy friend's favorite foods are:")
 print(friend_foods)
 
-# 1. Python List Assignment is by Reference (Not Copy)
+# Python List Assignment is by Reference (Not Copy)
 # In Python, variables that hold lists don’t store the list itself, but a reference (or pointer) to the memory location where the list is stored.
 
 # When you assign a list to another variable, you are not creating a new list; instead, you are creating a new reference to the same list in memory.
