@@ -1,5 +1,5 @@
 fav_num  = 17
-fav_num = "My DOB"
+fav_num = "My DOB"  # over write
 print(fav_num)
 
 
