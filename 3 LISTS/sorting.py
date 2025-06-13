@@ -4,6 +4,7 @@ cars.sort(reverse=True)
 print(cars)
 
 # Sorting a List Temporarily with the sorted() Function
+cars = ['bmw', 'audi', 'toyota', 'thar', 'maruti']
 print("Here is the original list:")
 print(cars)
 print("\nHere is the sorted list:")

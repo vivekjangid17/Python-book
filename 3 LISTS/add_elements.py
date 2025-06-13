@@ -8,5 +8,5 @@ print(friends)
 
 # Inserting Elements into a List
 
-friends.insert(2,'Mohit')
+friends.insert(2,'Krishna')
 print(friends)
