@@ -26,3 +26,7 @@ print(friend_foods)
 # At this point:
 
 # my_foods holds a reference to the actual list ['pizza', 'falafel', 'carrot cake']
+
+# Instead, it makes friend_foods point to the same list as my_foods.
+
+# Both variables now refer to the same object in memory.
