@@ -1,4 +1,3 @@
-
 foods = ('pizza', 'burger', 'samosa', 'patiez', 'momos')
 print("Original menu")
 for food in foods:

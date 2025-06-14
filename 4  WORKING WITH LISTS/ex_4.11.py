@@ -14,5 +14,5 @@ for fruit in fruits:
     print(fruit)
     
 print("\nMy friend's favorite fruits are:")
-for fruit in friend_fruits:
-    print(fruit)
+for f_fruit in friend_fruits:
+    print(f_fruit)
