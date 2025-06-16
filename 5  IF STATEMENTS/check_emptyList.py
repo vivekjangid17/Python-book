@@ -7,6 +7,7 @@ else:
     print("The list is empty, nothing to display.")
 
 #book example
+
 # requested_toppings = []
 
 # if requested_toppings:
