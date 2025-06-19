@@ -1,10 +1,11 @@
 # my example
-items = []
+items = [5]
 
 for item in items:
-    print(f"Item: {item}")
-else:
-    print("The list is empty, nothing to display.")
+    if items:
+        print(f"Item present")
+    else:
+        print("The list is empty, nothing to display.")
 
 #book example
 
