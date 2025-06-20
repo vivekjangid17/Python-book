@@ -11,7 +11,7 @@ student['marks'] = 85
 print(student) 
 
 alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
-print(f'Original position: {alien_0['x_position']}')
+print(f"Original position: {alien_0['x_position']}")
 
 # Move the alien to the right
 # Determine how far to move the alien based on its current speed.
@@ -23,11 +23,11 @@ else:
     # This must be a fast alien.
     alien_0['x_position'] = alien_0['x_position'] + 3
 
-print(f'New position: {alien_0["x_position"]}')
+print(f"New position: {alien_0['x_position']}")
     
 # Removing Key-Value Pairs
 del student['marks']
-# print(student)   Be aware that the deleted key-value pair is removed permanently.
+print(student)   # Be aware that the deleted key-value pair is removed permanently.
 
 
 # Using get() to Access Values
