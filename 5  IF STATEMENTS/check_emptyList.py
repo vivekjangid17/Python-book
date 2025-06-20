@@ -3,7 +3,7 @@ items = [5]
 
 for item in items:
     if items:
-        print(f"Item present")
+        print("Item present")
     else:
         print("The list is empty, nothing to display.")
 
