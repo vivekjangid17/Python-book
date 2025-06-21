@@ -8,7 +8,7 @@ print(student)
 # Adding New Key-Value Pairs
 student['age'] = 12
 student['marks'] = 85
-print(student) 
+print(student)
 
 alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
 print(f"Original position: {alien_0['x_position']}")
@@ -24,15 +24,17 @@ else:
     alien_0['x_position'] = alien_0['x_position'] + 3
 
 print(f"New position: {alien_0['x_position']}")
-    
+
 # Removing Key-Value Pairs
 del student['marks']
-print(student)   # Be aware that the deleted key-value pair is removed permanently.
-
+print(student
+      )  # Be aware that the deleted key-value pair is removed permanently.
 
 ###### Using get() to Access Values  #####
 
 # when we use square brackets to retrive the value of a key and if the key doesn't exits, we will get an error. To avoid this error we use get() method to acces the value.
 
-s_marks = student.get('marks', 'No marks assigned.')   # The get() method requires a key as a first argument. As a second optional argument, you can pass the value to be returned if the key doesn’t exist
+s_marks = student.get(
+    'marks', 'No marks assigned.'
+)  # The get() method requires a key as a first argument. As a second optional argument, you can pass the value to be returned if the key doesn’t exist
 print(s_marks)
