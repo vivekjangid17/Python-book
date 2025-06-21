@@ -2,7 +2,5 @@
 
 fav_number = {'kanak': 5, 'riya': 7, 'rohit': 45, 'virat': 18, 'vivek': 17}
 print(fav_number.items())
-for i,j in fav_number.items():    # the method items(), returns a sequence of key-value pairs
+for i, j in fav_number.items():  # the method items(), returns a sequence of key-value pairs
     print(f'{i}: {j}')
-        
-
