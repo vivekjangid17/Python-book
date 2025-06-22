@@ -14,12 +14,12 @@ print()
 aliens = []
 # new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
 
-# ⚠️ IMPORTANT NOTE:
+# IMPORTANT NOTE:
 # In this version, we are appending the same dictionary (new_alien) 30 times to the list.
 # This means all 30 elements in the list refer to the SAME alien object in memory.
 # So, if we change one alien, all of them will change — because they are just different references to the same object.
 
-# ✅ To create 30 separate aliens (independent objects), we must define the dictionary INSIDE the loop like this:
+# To create 30 separate aliens (independent objects), we must define the dictionary INSIDE the loop like this:
 
 for i in range(30):
     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
