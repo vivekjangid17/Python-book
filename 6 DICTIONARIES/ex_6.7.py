@@ -4,4 +4,8 @@ person_info1 = {'first_name': 'Virat', 'last_name': 'Kohli', 'age': 36, 'city': 
 person_info2 = {'first_name': 'Rohit', 'last_name': 'Sharma', 'age': 37, 'city': 'Mumbai'}
 person_info3 = {'first_name': 'Vivek', 'last_name': 'Jangid', 'age': 20, 'city': 'Alwar'}
 person = [person_info1, person_info2, person_info3]
-print(person)
+# print(person)   # print the whole list
+for p in person:
+    for key, value in p.items():
+        print(f"{key}: {value}")
+    print()
