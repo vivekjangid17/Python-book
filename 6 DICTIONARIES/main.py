@@ -32,7 +32,7 @@ print(student
 
 ###### Using get() to Access Values  #####
 
-# when we use square brackets to retrive the value of a key and if the key doesn't exits, we will get an error. To avoid this error we use get() method to acces the value.
+# when we use square brackets to retrive the value of a key and if the key doesn't exits, we will get an error. To avoid this error we use get() method to access the value.
 
 s_marks = student.get(
     'marks', 'No marks assigned.'
