@@ -1,0 +1,112 @@
+1. Frequency Counter of Nested Elements: 
+Given a list of dictionaries, count how many times each unique value appears (even inside nested dictionaries).
+
+data = [
+    {"name": "Alice", "info": {"age": 25, "city": "Delhi"}},
+    {"name": "Bob", "info": {"age": 25, "city": "Mumbai"}},
+    {"name": "Charlie", "info": {"age": 30, "city": "Delhi"}},
+]
+
+# Output: {'name': 3, 'Alice': 1, 'info': 3, 'age': 3, 25: 2, 'city': 3, 'Delhi': 2, 'Bob': 1, 'Mumbai': 1, 'Charlie': 1, 30: 1}
+
+2. Dictionary Key Swap with Value Collisions: 
+Swap keys and values in a dictionary. If values are not unique, store multiple keys as a list.
+
+data = {
+    "a": 1,
+    "b": 2,
+    "c": 1,
+    "d": 3
+}
+
+# Output: {1: ['a', 'c'], 2: ['b'], 3: ['d']}
+
+
+3. Merge Multiple Dictionaries by Adding Values
+Merge the following dictionaries by adding values for the same keys.
+
+dicts = [
+    {"a": 10, "b": 20},
+    {"a": 5, "c": 15},
+    {"b": 10, "c": 5}
+]
+
+# Output: {'a': 15, 'b': 30, 'c': 20}
+
+4. Filter Nested Dictionaries by Condition
+Given a nested dictionary, return a new dictionary with only those inner dictionaries where a specific condition is true.
+
+students = {
+    101: {"name": "Amit", "marks": 88},
+    102: {"name": "Riya", "marks": 92},
+    103: {"name": "Sohan", "marks": 67}
+}
+
+# Filter students with marks >= 90
+# Output: {102: {'name': 'Riya', 'marks': 92}}
+
+5. Dictionary to Flattened Dot-Notation
+Flatten a nested dictionary using dot notation for keys.
+
+data = {
+    "name": "Alice",
+    "address": {
+        "city": "Delhi",
+        "pin": 110001
+    }
+}
+
+# Output: {'name': 'Alice', 'address.city': 'Delhi', 'address.pin': 110001}
+
+6. Top N Frequent Words in a Dictionary of Sentences
+Given a dictionary where keys are IDs and values are sentences, return the top N most frequent words.
+
+data = {
+    1: "hello world hello",
+    2: "world of python",
+    3: "hello python hello"
+}
+
+# Top 2 frequent words -> [('hello', 4), ('world', 2)]
+
+7. Sort Dictionary by Nested Key
+Sort a dictionary by a value inside a nested dictionary.
+
+students = {
+    "s1": {"name": "John", "score": 88},
+    "s2": {"name": "Amy", "score": 92},
+    "s3": {"name": "Ravi", "score": 85}
+}
+
+# Sort by score ascending
+# Output: [('s3', {...}), ('s1', {...}), ('s2', {...})]
+
+8. Group Items by Key in List of Dicts
+Group dictionary items by a common key value.
+
+people = [
+    {"name": "Alice", "city": "Delhi"},
+    {"name": "Bob", "city": "Mumbai"},
+    {"name": "Charlie", "city": "Delhi"}
+]
+
+# Output: {'Delhi': ['Alice', 'Charlie'], 'Mumbai': ['Bob']}
+
+9. Deep Compare Two Nested Dictionaries
+Write a function to compare two nested dictionaries and return differences.
+
+
+dict1 = {'a': 1, 'b': {'x': 5, 'y': 6}}
+dict2 = {'a': 1, 'b': {'x': 5, 'y': 9}}
+
+# Output: {'b': {'y': (6, 9)}}
+
+10. Invert a Dictionary with Tuple Keys
+Invert a dictionary where keys are tuples.
+
+data = {
+    ('A', 'B'): 10,
+    ('C', 'D'): 20
+}
+
+# Output: {10: ('A', 'B'), 20: ('C', 'D')}
