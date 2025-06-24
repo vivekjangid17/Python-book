@@ -10,13 +10,6 @@ data = [
 
 # Output: {'name': 3, 'Alice': 1, 'info': 3, 'age': 3, 25: 2, 'city': 3, 'Delhi': 2, 'Bob': 1, 'Mumbai': 1, 'Charlie': 1, 30: 1}
 
-# Sample nested dictionary data
-data = [
-    {"name": "Alice", "info": {"age": 25, "city": "Delhi"}},
-    {"name": "Bob", "info": {"age": 25, "city": "Mumbai"}},
-    {"name": "Charlie", "info": {"age": 30, "city": "Delhi"}},
-]
-
 # Creating an empty dictionary to store the frequency of keys and values
 frequency = {}
 
