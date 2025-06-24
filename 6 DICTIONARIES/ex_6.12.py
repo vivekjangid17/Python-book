@@ -8,15 +8,54 @@ data = [
     {"name": "Charlie", "info": {"age": 30, "city": "Delhi"}},
 ]
 
-# Output: {'Alice': 1, 'Bob': 1, 'Charlie': 1, 25: 2, 30: 1, 'Delhi': 2, 'Mumbai': 1}
+# Output: {'name': 3, 'Alice': 1, 'info': 3, 'age': 3, 25: 2, 'city': 3, 'Delhi': 2, 'Bob': 1, 'Mumbai': 1, 'Charlie': 1, 30: 1}
 
-count = 0
-for i in data:
-    for k,v in i.items():
-        if isinstance(v,dict):
-            for n,p in v.items():
-                print(f'{n}:{p}')
-        else:
-            print(f'{k}:{v}')
-    print()
+# Sample nested dictionary data
+data = [
+    {"name": "Alice", "info": {"age": 25, "city": "Delhi"}},
+    {"name": "Bob", "info": {"age": 25, "city": "Mumbai"}},
+    {"name": "Charlie", "info": {"age": 30, "city": "Delhi"}},
+]
+
+# Creating an empty dictionary to store the frequency of keys and values
+frequency = {}
+
+# Loop through each dictionary (person) in the list
+for person in data:
     
+    # Loop through each key and value in the outer dictionary
+    for outer_key, outer_value in person.items():
+        
+        # Count the outer key (like 'name', 'info')
+        if outer_key in frequency:
+            frequency[outer_key] += 1
+        else:
+            frequency[outer_key] = 1
+
+        # If the value is another dictionary (like the value of 'info')
+        if isinstance(outer_value, dict):
+            
+            # Loop through nested key-value pairs (like 'age': 25)
+            for nested_key, nested_value in outer_value.items():
+                
+                # Count the nested key (like 'age', 'city')
+                if nested_key in frequency:
+                    frequency[nested_key] += 1
+                else:
+                    frequency[nested_key] = 1
+
+                # Count the nested value (like 25, 'Delhi')
+                if nested_value in frequency:
+                    frequency[nested_value] += 1
+                else:
+                    frequency[nested_value] = 1
+        
+        else:
+            # If the outer value is not a dictionary (like 'Alice'), count it
+            if outer_value in frequency:
+                frequency[outer_value] += 1
+            else:
+                frequency[outer_value] = 1
+
+# Print the final frequency dictionary
+print(frequency)
