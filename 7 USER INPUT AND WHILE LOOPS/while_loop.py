@@ -6,4 +6,15 @@ i = 1
 while(i<=5):
     print(i)
     i+=1
-    
+
+# Letting the User Choose When to Quit
+prompt = "Enter 'quit' to end the program: "
+
+message = ""
+while message != 'quit':
+    message = input(prompt)
+    if message != 'quit':
+        print(message)
+
+# Using a Flag
+active = True
