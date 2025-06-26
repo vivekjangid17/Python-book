@@ -3,7 +3,7 @@
 # The while loop runs as long as, or while, a certain condition is true.
 # while loop counts from 1 to 5:
 i = 1
-while(i<=5):
+while (i<=5):
     print(i)
     i+=1
 
@@ -18,3 +18,9 @@ while message != 'quit':
 
 # Using a Flag
 active = True
+while active:
+    message = input(prompt)
+    if message == 'quit':
+        active = False
+    else:
+        print(message)
