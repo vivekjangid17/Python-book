@@ -6,3 +6,9 @@
 
 3. To get just the number:
     git rev-list --count HEAD --since=midnight
+
+
+    
+
+                    struggling is a part of growth.
+                    You’re not supposed to know everything — but you're supposed to try.
