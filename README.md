@@ -57,5 +57,5 @@ If you're also learning Python or interested in AI/ML, feel free to connect or c
 
 ---
 
-Happy coding! 🧠💻  
+Happy coding!
 _Vivek Jangid_
