@@ -1,3 +1,5 @@
+# Positional Arguments
+
 def full_name(f_name,l_name):
     print(f'My full is {f_name} {l_name}.')
 
