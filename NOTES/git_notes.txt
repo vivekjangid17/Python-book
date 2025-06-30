@@ -1,5 +1,5 @@
 1. Make sure the commit author is actually you (your GitHub account).
-        git log --pretty=full
+    git log --pretty=full
 
 2. This shows all commits made since 12:00 AM today in the current repository.
     git log --since=midnight --oneline
@@ -7,7 +7,8 @@
 3. To get just the number:
     git rev-list --count HEAD --since=midnight
 
-
+4. This keeps your changes (rename + new files), but removes them from the staging area.
+    git reset
     
 
                     struggling is a part of growth.
