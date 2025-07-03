@@ -2,4 +2,18 @@
 
 Use None to add an optional parameter to make_album() that allows you to store the number of songs on an album. If the calling line includes a value for the number of songs, add that value to the album's dictionary. Make at least one new function call that includes the number of songs on an album.'''
 
-def make_album(artist, title):
+def make_album(artist, title, songs = None):
+    if songs:
+        return {'Artist':artist, 'Title':title,'Songs':songs}
+    return {'Artist':artist, 'Title':title}
+
+
+album1 = make_album('Arijit singh', 'Bollywood')
+album2 = make_album('Shreya Ghoshal', 'Bollywood')
+album3 = make_album('Mashoom Sharma', 'Haryanvi',5)
+print(album1)
+print(album2)
+print(album3)
+    
+
+
