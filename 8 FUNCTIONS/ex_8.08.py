@@ -24,4 +24,4 @@ while True:
         break
 
     album = make_album(artist,title,songs)
-    print(album) 
+    print(album)
