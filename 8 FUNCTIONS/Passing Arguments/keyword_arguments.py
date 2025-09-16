@@ -16,4 +16,4 @@ address(district='Alwar')
 address(district='Gajiyabad',state="UP")
 address('Alwar')
 
-# When ywe use default values, any parameter with a default value needs to be listed after all the parameters that don't have default values. This allows Python to continue interpreting positional arguments correctly.
+# When we use default values, any parameter with a default value needs to be listed after all the parameters that don't have default values. This allows Python to continue interpreting positional arguments correctly.
