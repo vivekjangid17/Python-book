@@ -1,0 +1,18 @@
+Function Vs Method 
+{ 
+    L = [1,2,3,4]
+    len(L)    # 4
+    L.append(5)   # [1,2,3,4,5]
+
+    len() is a function which can be used by any other class like list, str, int.
+    Jab hum len() function use karte hai to . use nhi karte because ye kisi specific class ka function nhi hai ye ek general function hai, orr iske len() ke andar argument pass karte hai jaise len(L)
+
+    While,
+    append() is a method which can only be used by list class.
+    Jab hum append() method use karte hai to . use karte hai because ye list class ke andar defined hai, orr jab append() method use karte hai to object.append(agrument) karte hai.
+}
+
+Constructor
+{
+    Constructor is a special method jiske andar ka code automatically execute hota hai jab class ka object bnta hai
+}
