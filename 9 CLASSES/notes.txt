@@ -12,7 +12,22 @@ Function Vs Method
     Jab hum append() method use karte hai to . use karte hai because ye list class ke andar defined hai, orr jab append() method use karte hai to object.append(agrument) karte hai.
 }
 
+
 Constructor
 {
     Constructor is a special method jiske andar ka code automatically execute hota hai jab class ka object bnta hai
+    esa method hai jiska control user ke pass nhi hai, iske andar vo code likha jata hai jo kisi application ke on hote hi user ke bina interfare ke process hota hai, for example - connect to internet, database se connect karna
+    ex - __init__()
+}
+
+
+special/magic/dunder methods    
+{
+    magic method is a method which automatically triggers.
+}
+
+
+self
+{
+    obj hi self hai
 }
