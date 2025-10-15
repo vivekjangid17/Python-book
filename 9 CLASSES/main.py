@@ -1,3 +1,4 @@
+# A simple ATM machine logic in python 
 
 class Atm:
     
@@ -11,6 +12,8 @@ class Atm:
         # print("hello")
     
     def menu(self):
+        '''This method will take use input'''
+        
         use_input = input(
         """
         Hello, how would you like to proceed?
@@ -33,37 +36,45 @@ class Atm:
             print("Exit")
             
     def create_pin(self):
-            self.pin = input("Enter your pin: ")
-            print("Pin set successfully")
+        ''' This method will set a pin for user.'''
+        
+        self.pin = input("Enter your pin: ")
+        print("Pin set successfully")
             
-            self.menu()
+        self.menu()
             
     def deposite(self):
-            temp = input("Enter your pin: ")
-            if temp == self.pin:
-                amount = int(input("Enter the amount: "))
-                self.balance = self.balance + amount
-                print("Amount deposite successfull")
-            else:
-                print("Invalid pin")
+        ''' This method allows a users to deposite money in their account.'''
+        
+        temp = input("Enter your pin: ")
+        if temp == self.pin:
+            amount = int(input("Enter the amount: "))
+            self.balance = self.balance + amount
+            print("Amount deposite successfull")
+        else:
+            print("Invalid pin")
                 
-            self.menu()
+        self.menu()
                 
     def withdraw(self):
-            temp = input("Enter your pin: ")
-            if temp == self.pin:
-                amount = int(input("Enter the amount: "))
-                if amount < self.balance:
-                    self.balance = self.balance - amount
-                    print("Successfully withdrawel")
-                else:
-                    print("Insufficient balance")
+        ''' This method will allows user to withdraw from their accounts.'''
+        
+        temp = input("Enter your pin: ")
+        if temp == self.pin:
+            amount = int(input("Enter the amount: "))
+            if amount < self.balance:
+                self.balance = self.balance - amount
+                print("Successfully withdrawel")
             else:
-                print("Invalid pin")
+                print("Insufficient balance")
+        else:
+            print("Invalid pin")
                 
-            self.menu()
+        self.menu()
                 
     def check_balance(self):
+        ''' This method used to check balance.'''
+        
         temp = input("Enter your pin: ")
         if temp == self.pin:
             print(f"Your total balance is: {self.balance}")
