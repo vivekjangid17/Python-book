@@ -43,3 +43,9 @@ Instance variable
 {
     Instance variable vo hota hai jo hum constructor ke andar banate hai, of instance variable ka value har object ke liye different hota hai.
 }
+
+
+Reference bariable
+{
+    Object create karte time object ko jis variable me store kiya jata hai, that variable is called reference bariable.
+}
