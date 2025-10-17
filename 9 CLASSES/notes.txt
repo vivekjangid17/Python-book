@@ -49,3 +49,8 @@ Reference bariable
 {
     Object create karte time object ko jis variable me store kiya jata hai, that variable is called reference bariable.
 }
+
+Object as Mutable
+{
+    In python class ke objects are mutable like list and sets
+}
