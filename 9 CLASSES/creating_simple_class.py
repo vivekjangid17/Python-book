@@ -2,14 +2,13 @@
 
 class Dog:
     # without __init__() method ke name & age will be same for all objects
-    # if we wants the different value for different objects then we have to use __init__().
+    # if we wants the different value for different objects then we have to use __init__() constructor
     # name = 'Kalu'
     # age = '3'
     
     def __init__(self,name,age):
         self.name = name
         self.age = age
-    
     def greet(self,place):
         print("Good morning,",self.name, place, "pe ja rhe ho...")
     
