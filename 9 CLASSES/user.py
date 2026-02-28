@@ -23,21 +23,24 @@ class User:
     def greet_user(self):
         print("Hello", self.first_name + "!", "Welcome back 😊")
         print()
-        
-# Creating different user objects
+ 
+ 
+ 
+if __name__ == "__main__":       
+    # Creating different user objects
 
-user1 = User("Vivek", "Jangid", 21, "vivek@gmail.com", "Alwar")
-user2 = User("Rohit", "Sharma", 20, "rohit@gmail.com", "Jaipur")
-user3 = User("Rahul", "Verma", 22, "rahul@gmail.com", "Delhi")
+    user1 = User("Vivek", "Jangid", 21, "vivek@gmail.com", "Alwar")
+    user2 = User("Rohit", "Sharma", 20, "rohit@gmail.com", "Jaipur")
+    user3 = User("Rahul", "Verma", 22, "rahul@gmail.com", "Delhi")
 
-# Calling methods for each user
+    # Calling methods for each user
 
-user1.describe_user()
-user1.greet_user()
+    user1.describe_user()
+    user1.greet_user()
 
-user2.describe_user()
-user2.greet_user()
+    user2.describe_user()
+    user2.greet_user()
 
-user3.describe_user()
-user3.greet_user()
-        
+    user3.describe_user()
+    user3.greet_user()
+            

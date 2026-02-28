@@ -13,8 +13,12 @@ class Restaurant:
     
     def open_restaurant(self):
         print(f"{self.restaurant_name} is open for 24/7 days.")
-    
-    
-restaurant = Restaurant('Pavitra Bhojnalaya', ' Pure Vegetarian')
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+ 
+# when we import this file of class Restaurant() later inside another file, and run that file the whole code of the imported file is going to run, whether it is inside the class of outside the class,
+# to resolve this issue we use ' if __name__ == "__main__": ', this ensures that if this imported file is executed only, then code inside this idiom.
+   
+if __name__ == "__main__":
+      
+    restaurant = Restaurant('Pavitra Bhojnalaya', ' Pure Vegetarian')
+    restaurant.describe_restaurant()
+    restaurant.open_restaurant()
